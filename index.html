@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рисунок машины</title>
+
+    <style>
+        .car {
+            position: relative;
+            width: 200px;
+            height: 100px;
+            background-color: #ff3333;
+            border-radius: 10px;
+            margin: auto;      
+            margin-top: 20%;      
+            
+            left: 800px;
+
+            animation: 2s drive;
+        }
+        .roof {
+            position: absolute;
+            top: -30px;
+            left: 30px;
+            width: 140px;
+            height: 30px;
+            background-color: #ff8f0e;
+            border-radius: 5px;
+        }
+        .wheel {
+            position: absolute;
+            bottom: -15px;
+            width: 30px;
+            height: 30px;
+            background-color: #2c3e50;
+            border-radius: 50%;
+        }
+        .wheel.left {
+            left: 20px;
+        }
+        .wheel.right {
+            right: 20px;
+        }
+
+        .road {
+            height: 100vh;
+            width: 200vh;
+            border: 10px;
+            border-color: black;
+            background-color: gray;
+        }        
+        .body {
+            background-color: rgb(155, 255, 255);
+        }
+
+        @keyframes drive{
+            From {
+                left: -10000px;
+            }
+            To {
+                
+            }
+        }
+    </style>
+</head>
+
+<body class="body">      
+    <div class="car">
+        <div class="roof"></div>
+        <div class="wheel left"></div>
+        <div class="wheel right"></div>
+    </div>
+    <div class="road">        
+    </div>
+</body>
+</html>
